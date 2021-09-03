@@ -1,0 +1,22 @@
+<div class="Content">
+    <section>
+        <div class="example-label">View in hogwarts: </div>
+        <div class="example-button-row">
+          <button name="btn-students" mat-raised-button color="warn" (click)="getStudensData()">Students</button>
+          <button mat-raised-button color="warn" (click)="getTeacherData()">Staff</button>
+        </div>
+    </section>
+    <section>
+        <div class="example-label">View by house: </div>
+        <div class="example-button-row">
+          <button mat-raised-button color="primary" (click)="getStudentByHouseData('slytherin')">Slytherin</button>
+          <button mat-raised-button color="primary" (click)="getStudentByHouseData('gryffindor')">Gryffindor</button>
+          <button mat-raised-button color="primary" (click)="getStudentByHouseData('ravenclaw')">Ravenclaw</button>
+          <button mat-raised-button color="primary" (click)="getStudentByHouseData('hufflepuff')">Hufflepuff</button>
+        </div>
+    </section>
+    
+    <div *ngIf="!!dataTable" class="content-table">
+        <app-person-hogwarts-table [dataElement]="dataTable" ></app-person-hogwarts-table>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+img {
+    height: 70%;
+    border-radius: 50%;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+  }
+
+.image-table {
+    width: 200px;
+    height: 200px;
+}
+
+th, td {
+    width: 100%;
+    text-align: center;
+}
+
+
+.mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+  
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
